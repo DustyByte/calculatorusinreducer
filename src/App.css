@@ -1,0 +1,40 @@
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 3rem);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+.output {
+    grid-column: span 4;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: .75rem;
+}
+.calculator-grid > button {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.calculator-grid > button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.previous-operand, .current-operand {
+    color: white;
+}
+
+.previous-operand {
+    font-size: 1.5rem;
+}
+
+.current-operand {
+    font-size: 2.5rem;
+}
